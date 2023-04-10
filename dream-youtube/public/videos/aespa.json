@@ -1,0 +1,856 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "eyA1iFlvfZmxfF6sNa_plEOSan0",
+  "nextPageToken": "CBkQAA",
+  "regionCode": "KR",
+  "pageInfo": {
+    "totalResults": 1000000,
+    "resultsPerPage": 25
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "XaoMN3WltSMs3dNGYMWG9kh8F_4",
+      "id": {
+        "kind": "youtube#channel",
+        "channelId": "UC9GtSLeksfK4yuJ_g1lgQbg"
+      },
+      "snippet": {
+        "publishedAt": "2020-06-26T03:59:21Z",
+        "channelId": "UC9GtSLeksfK4yuJ_g1lgQbg",
+        "title": "aespa",
+        "description": "aespa 에스파 The 2nd Mini Album 〖Girls〗 Welcome to aespa Official YouTube Channel! You can enjoy aespa's latest videos on ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/nQLCaWhre_Fp09Iw1Qpuv_v_ljV2pxPCSUcENjuPbyAmmgNJgi7RTYimbfX2raR7YKD_LrMH7Q=s88-c-k-c0xffffffff-no-rj-mo"
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/nQLCaWhre_Fp09Iw1Qpuv_v_ljV2pxPCSUcENjuPbyAmmgNJgi7RTYimbfX2raR7YKD_LrMH7Q=s240-c-k-c0xffffffff-no-rj-mo"
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/nQLCaWhre_Fp09Iw1Qpuv_v_ljV2pxPCSUcENjuPbyAmmgNJgi7RTYimbfX2raR7YKD_LrMH7Q=s800-c-k-c0xffffffff-no-rj-mo"
+          }
+        },
+        "channelTitle": "aespa",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-06-26T03:59:21Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "TeY8yaIcDNkKZt0x6IawnCuW5cs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "fvtzZFhrKLE"
+      },
+      "snippet": {
+        "publishedAt": "2023-03-31T04:00:16Z",
+        "channelId": "UC9GtSLeksfK4yuJ_g1lgQbg",
+        "title": "aespa &#39;Hold On Tight&#39; (Tetris Motion Picture Soundtrack) Visualizer",
+        "description": "aespa's new song 'Hold On Tight' (Tetris Original Motion Picture Soundtrack) is out! Listen and download on your favorite ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fvtzZFhrKLE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fvtzZFhrKLE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fvtzZFhrKLE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "aespa",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-03-31T04:00:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "gVWvJvPsrvPfgeQi0CDhOD19SHo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "4TWR90KJl84"
+      },
+      "snippet": {
+        "publishedAt": "2021-05-17T09:00:02Z",
+        "channelId": "UCEf_Bc-KVd7onSeifS3py9g",
+        "title": "aespa 에스파 &#39;Next Level&#39; MV",
+        "description": "aespa's new single \"Next Level\" is out! Listen and download on your favorite platform: https://smarturl.it/aespa_NextLevel ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4TWR90KJl84/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4TWR90KJl84/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4TWR90KJl84/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SMTOWN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-05-17T09:00:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Y0XYhBYg6lJ3ljSBLWHZ_hFZ09s",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "w5Y6FtngQ1w"
+      },
+      "snippet": {
+        "publishedAt": "2023-02-16T09:00:29Z",
+        "channelId": "UC9GtSLeksfK4yuJ_g1lgQbg",
+        "title": "aespa 에스파 &#39;SYNK : HYPER LINE&#39; Spoiler | &#39;Salty &amp; Sweet&#39; Dance Practice (Short Ver.)",
+        "description": "2023 aespa 1st Concert 'SYNK : HYPER LINE' 〖 잠실실내체육관 〗 ➫2023.02.25(SAT) - 6PM(KST) ➫2023.02.26(SUN) ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/w5Y6FtngQ1w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/w5Y6FtngQ1w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/w5Y6FtngQ1w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "aespa",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-02-16T09:00:29Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "z3i6S_jzllYrZLLENvPJMJHQnqc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "WPdWvnAAurg"
+      },
+      "snippet": {
+        "publishedAt": "2021-10-05T09:00:00Z",
+        "channelId": "UCEf_Bc-KVd7onSeifS3py9g",
+        "title": "aespa 에스파 &#39;Savage&#39; MV",
+        "description": "aespa's 1st mini album \"Savage\" is out! Listen and download on your favorite platform: https://smarturl.it/ae_Savage 🎟️ aespa ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WPdWvnAAurg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WPdWvnAAurg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WPdWvnAAurg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SMTOWN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-05T09:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "O4tpPXpaopEQ3D-sFd50FeOq3LI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "yLTazjoBbyg"
+      },
+      "snippet": {
+        "publishedAt": "2023-03-31T08:02:55Z",
+        "channelId": "UCo6U6rOB3SriO8X9pN3DluA",
+        "title": "[ENG] LDF X aespa Photo Shoot Behind",
+        "description": "LOTTE DUTY FREE X aespa(@aespa) - Photo Shoot Behind-the-Scene Video Revealed For the First Time❗ The goddess ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yLTazjoBbyg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yLTazjoBbyg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yLTazjoBbyg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "LDF TV by lottedutyfree",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-03-31T08:02:55Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Vgj8wl1bkMON82jwWndJpzwnZSA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "dYRITmpFbJ4"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-08T04:00:14Z",
+        "channelId": "UCEf_Bc-KVd7onSeifS3py9g",
+        "title": "aespa 에스파 &#39;Girls&#39; MV",
+        "description": "aespa's 2nd Mini Album \"Girls\" is out! Listen and download on your favorite platform: https://aespa.lnk.to/GirlsEP [Tracklist] 01 Girls ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dYRITmpFbJ4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dYRITmpFbJ4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dYRITmpFbJ4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SMTOWN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-08T04:00:14Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ot4aO2ygDCFLDZk1Rq4yUdekY8E",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "H69tJmsgd9I"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-20T09:00:08Z",
+        "channelId": "UCEf_Bc-KVd7onSeifS3py9g",
+        "title": "[STATION] aespa 에스파 &#39;Dreams Come True&#39; MV",
+        "description": "aespa's new single \"Dreams Come True\" is out! Listen and download on your favorite platform: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/H69tJmsgd9I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/H69tJmsgd9I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/H69tJmsgd9I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SMTOWN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-20T09:00:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Uq64seRHCCzi-Lu68ICGHlZwR6o",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "h-k2PcfFDwk"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-01T13:01:41Z",
+        "channelId": "UC9GtSLeksfK4yuJ_g1lgQbg",
+        "title": "aespa 에스파 &#39;Girls&#39; Stage Video",
+        "description": "From SMTOWN LIVE 2023 : SMCU PALACE @KWANGYA SMTOWN LIVE 2023 Playlist ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/h-k2PcfFDwk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/h-k2PcfFDwk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/h-k2PcfFDwk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "aespa",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-01T13:01:41Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Kw3Ey3MvEvOHzSd4UPTGOXqIWmI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ZeerrnuLi5E"
+      },
+      "snippet": {
+        "publishedAt": "2020-11-17T09:00:22Z",
+        "channelId": "UCEf_Bc-KVd7onSeifS3py9g",
+        "title": "aespa 에스파 &#39;Black Mamba&#39; MV",
+        "description": "Listen and download aespa's debut single \"Black Mamba\": https://smarturl.it/aespa_BlackMamba The Debut Stage ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ZeerrnuLi5E/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ZeerrnuLi5E/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ZeerrnuLi5E/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SMTOWN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-17T09:00:22Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "9r65Bmq3jrLP6yPrLYbohgtyrGQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "iq-ivLY_9A8"
+      },
+      "snippet": {
+        "publishedAt": "2023-02-23T09:00:24Z",
+        "channelId": "UC9GtSLeksfK4yuJ_g1lgQbg",
+        "title": "aespa 에스파 &#39;ep.3 Girls (Don’t you know I’m a Savage?)&#39; - SM Culture Universe",
+        "description": "aespa #SMCU 'ep.1 Black Mamba' ➫ https://youtu.be/vbH4Lk5wYWg 'ep.2 Next Level' ➫ https://youtu.be/i8fRCkq5tbw The ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/iq-ivLY_9A8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/iq-ivLY_9A8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/iq-ivLY_9A8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "aespa",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-02-23T09:00:24Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Y11CcehbEtjzruf3bCm1L_oqE2Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "z2ZjutyxmjA"
+      },
+      "snippet": {
+        "publishedAt": "2022-06-24T04:00:28Z",
+        "channelId": "UCEf_Bc-KVd7onSeifS3py9g",
+        "title": "aespa 에스파 &#39;Life&#39;s Too Short (English Ver.)&#39; MV",
+        "description": "aespa's new single \"Life's Too Short\" is out! Listen and download on your favorite platform: https://aespa.lnk.to/LifesTooShort ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/z2ZjutyxmjA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/z2ZjutyxmjA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/z2ZjutyxmjA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SMTOWN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-06-24T04:00:28Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "EnViiWvkCBDc8lKAjHv4zCVTeZ4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "0lXwMdnpoFQ"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-01T11:00:02Z",
+        "channelId": "UC473RoZQE2gtgZJ61ZW0ZDQ",
+        "title": "aespa 에스파 &#39;도깨비불 (Illusion)&#39; Dance Practice",
+        "description": "SMP FLOOR 식구들~ 겁내지 말고 이리 온~ (야옹) https://aespa.lnk.to/GirlsEP 'Girls' MV https://youtu.be/dYRITmpFbJ4 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0lXwMdnpoFQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0lXwMdnpoFQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0lXwMdnpoFQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SMP FLOOR",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-01T11:00:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "_7Lvb7e5cDzjjDa_nqEOJ6TZiXY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "BpCvYeK5hcE"
+      },
+      "snippet": {
+        "publishedAt": "2022-06-01T04:00:05Z",
+        "channelId": "UC9GtSLeksfK4yuJ_g1lgQbg",
+        "title": "aespa 에스파 &#39;도깨비불 (Illusion)&#39; Lyric Video",
+        "description": "aespa's 2nd Mini Album \"Girls\" is out! Listen and download on your favorite platform: https://aespa.lnk.to/GirlsEP 'Girls' MV ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BpCvYeK5hcE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BpCvYeK5hcE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BpCvYeK5hcE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "aespa",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-06-01T04:00:05Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-1f8XWqoio1f_qslgIVGD4o8uD8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "fPpbfQiisA0"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-26T12:16:24Z",
+        "channelId": "UCgkQKV-Jum6D1hhx65jA24g",
+        "title": "aespa 에스파 &#39;도깨비불 (Illusion)&#39; (교차편집 Stage Mix)",
+        "description": "aespa 에스파 카리나, 윈터, 지젤, 닝닝 SM엔터테인먼트 Girls - The 2nd Mini Album 2022.07.08 #エスパ #aespa #에스파 #Illusion ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fPpbfQiisA0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fPpbfQiisA0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fPpbfQiisA0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "idol studio",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-26T12:16:24Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "q3ZrRc8fAfF5z96zVKw-tm15IYI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "qMLcW7FqwJw"
+      },
+      "snippet": {
+        "publishedAt": "2023-03-30T13:00:37Z",
+        "channelId": "UC9GtSLeksfK4yuJ_g1lgQbg",
+        "title": "어떡해!! 화보 너무 재밌잖아🧸🤍 | NINGNING VOGUE plus Photoshoot Behind",
+        "description": "aespa Official https://www.youtube.com/c/aespa https://www.instagram.com/aespa_official https://www.tiktok.com/@aespa_official ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qMLcW7FqwJw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qMLcW7FqwJw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qMLcW7FqwJw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "aespa",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-03-30T13:00:37Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "BE8k3Ak4Hdvyr-_A9LJv5JZoxS8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Gbn30b7jW04"
+      },
+      "snippet": {
+        "publishedAt": "2023-03-24T09:00:11Z",
+        "channelId": "UCwx6n_4OcLgzAGdty0RWCoA",
+        "title": "[EN] 에스파 콘서트를 공짜로 보는 방법(인 줄 알았다😅) | 에스파 | 콘서트 진행요원 | 워크맨2",
+        "description": "JOB것들아~~~♥ 인력소장이다,,~~ 걸그룹 에스파가,,, 콘서트를 한다고 해서,,, 성규가,,, 일손을 좀,, 거들고,, 왔다,,,~ 진심으로,,, ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Gbn30b7jW04/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Gbn30b7jW04/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Gbn30b7jW04/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "워크맨-Workman",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-03-24T09:00:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "KY8oC-RjrX5RyRoEgMr9lOcMepA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "NU611fxGyPU"
+      },
+      "snippet": {
+        "publishedAt": "2020-11-26T10:00:11Z",
+        "channelId": "UC9GtSLeksfK4yuJ_g1lgQbg",
+        "title": "aespa 에스파 &#39;Black Mamba&#39; Dance Practice",
+        "description": "aespa's debut single \"Black Mamba\" is Out! Listen and download on your favorite platform: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NU611fxGyPU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NU611fxGyPU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NU611fxGyPU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "aespa",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-11-26T10:00:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "G6leKtN-OdjhGD9DVTMqEGaSO7Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "NNJqlg3HxXs"
+      },
+      "snippet": {
+        "publishedAt": "2023-01-01T07:58:34Z",
+        "channelId": "UC9y1RSyExk2aPj5LP4LTDLA",
+        "title": "aespa- Illusion @ SMCU Palace 2023 Stage Video",
+        "description": "kpop #aespa #kpop2022 #aespaillusion #foryou #smentertainment.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NNJqlg3HxXs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NNJqlg3HxXs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NNJqlg3HxXs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "☆𝒕𝒂𝒆𝒔𝒕𝒓𝒐𝒏𝒐𝒎𝒚☆",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-01-01T07:58:34Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Y_i_ZpHHLUZzTbgCWQDXcPxJKI4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Tao0iLIPvkw"
+      },
+      "snippet": {
+        "publishedAt": "2023-03-30T16:38:11Z",
+        "channelId": "UCdV79O72wNg4Trqsc_934TQ",
+        "title": "aespa - &#39;Hold On Tight&#39; (Tetris ost) Lyrics [Color Coded_Eng]",
+        "description": "By - Zaty Farhani Thanks for watching! Please LIKE and SHARE this video! Don't forget to SUBSCRIBE our channel. c All Rights ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Tao0iLIPvkw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Tao0iLIPvkw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Tao0iLIPvkw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Zaty Farhani",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-03-30T16:38:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Nww_Y1OlXCG1ikaQAHyCOe7zJDw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "gl5pbTpqGD0"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-24T10:41:07Z",
+        "channelId": "UCS_hnpJLQTvBkqALgapi_4g",
+        "title": "aespa(에스파) - Illusion(도깨비불) @인기가요 inkigayo 20220724",
+        "description": "aespa - Illusion #SBSInkigayo_EP1147 에스파 - 도깨비불 #aespa #Illusion SBS Inkigayo(인기가요) is a Korean music program ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gl5pbTpqGD0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gl5pbTpqGD0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gl5pbTpqGD0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "스브스케이팝 X INKIGAYO",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-24T10:41:07Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "4azGZvmgWs1tsIdyaanGCPR2jGk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "pRmBn_INljM"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-31T14:28:19Z",
+        "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
+        "title": "[2022 MBC 가요대제전] 에스파 - 도깨비불 + 걸스 (aespa - Illusion + Girls), MBC 221231 방송",
+        "description": "More clips are available iMBC https://program.imbc.com/2022gayo.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pRmBn_INljM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pRmBn_INljM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pRmBn_INljM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "MBCkpop",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-31T14:28:19Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Gos-w2TsNFf-Dnm6KBcuxqz2yqg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "iTgcp1oDk2M"
+      },
+      "snippet": {
+        "publishedAt": "2022-12-14T09:00:21Z",
+        "channelId": "UCEf_Bc-KVd7onSeifS3py9g",
+        "title": "Red Velvet X aespa &#39;Beautiful Christmas&#39; MV",
+        "description": "SMTOWN's \"2022 Winter SMTOWN : SMCU PALACE\" is out! Listen and download on your favorite platform: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/iTgcp1oDk2M/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/iTgcp1oDk2M/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/iTgcp1oDk2M/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "SMTOWN",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-12-14T09:00:21Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "rjBQfPXZBP6e9Vx_8Xev21UUE_o",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "u4CJVnBpbLE"
+      },
+      "snippet": {
+        "publishedAt": "2023-02-18T17:31:32Z",
+        "channelId": "UC8yPhlmo-4MY5ZfF-cw3JRg",
+        "title": "에스파(AESPA) Full Ver. (Illusion + Girls) 23.02.18",
+        "description": "2023.02.18 에스파(AESPA) Full Ver. (Illusion + Girls) 23.02.18 도깨비불 Illusion 걸스 Girls 카리나, 윈터, 지젤, 닝닝 8K 30P 락뮤직 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/u4CJVnBpbLE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/u4CJVnBpbLE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/u4CJVnBpbLE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Rock Music",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-02-18T17:31:32Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ojJIeHRH4GxGG688mT-BMJ_NZCQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "wEgqQtdBo_Y"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-12T14:02:08Z",
+        "channelId": "UCEIi7zFR_wE23jFncVtd6-A",
+        "title": "[BE ORIGINAL] aespa(에스파) &#39;Girls&#39; (4K)",
+        "description": "[BE ORIGINAL] aespa 'Girls' [비 오리지널] 에스파 'Girls' 역시 에스파 컨셉 소화력은 Next Level   짱짱Girls의 완벽 포포몬쓰 보러 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/wEgqQtdBo_Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/wEgqQtdBo_Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/wEgqQtdBo_Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "STUDIO CHOOM [스튜디오 춤]",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-12T14:02:08Z"
+      }
+    }
+  ]
+}

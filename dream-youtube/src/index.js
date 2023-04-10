@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { QueryClient, QueryClinentPreovider } from "@tanstack/react-query";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 import NotFound from "./pages/NotFound";
 import Videos from "./pages/Videos";
 import VideoDetail from "./pages/VideoDetail";
-
 // router를 정의했으니 사용해야하는데
 const router = createBrowserRouter([
   {
@@ -23,14 +22,12 @@ const router = createBrowserRouter([
   },
 ]);
 
-const queryClient = new QueryClient();
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  // <QueryClinentPreovider client={queryClient}>
+
   <RouterProvider router={router} />
-  // </QueryClinentPreovider>
+
   // </React.StrictMode>
 );
 
