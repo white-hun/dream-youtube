@@ -54,7 +54,7 @@ export default function Videos() {
 // 1. 실제 API를 사용해서 YouTube API와 잘되는지 만든 APP이 잘 동작하는지 확인이 필요한데 Mock data와 실제 API를 스위칭 하는 방법이 필요하다
 // 2. 컴포넌트 내에 네트워크 통신 내부 구현 사항이 너무 많이 노출되어 있다
 // 또 다른 부분에서 특정 동작(ex.검색기능)에 관해서 사용해야한다면 동일한 코드를 다시 구현해야하는데 재사용성, 유지보수가 떨어진다. useQuery의 callback함수에 내용이 다 포함 되어 있기 때문에 가독성도 떨어진다
-// 그래서 대부분 api를 따로 뺴서 관리하는데 --> /api/youtube.js
+// 그래서 대부분 api를 따로 뺴서 관리하는데 --> /api/youtube.js, FakeYoutube.js
 // 그 후 useQuery 두 번째 인자 callback함수에 작성한 api를 사용한다
 // 컴포넌트에서는 어떤 네트워크 통신도 신경쓰지 않는다
 
