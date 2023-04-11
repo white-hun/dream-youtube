@@ -2,21 +2,16 @@ import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
 import VideoCard from "../components/VideoCard";
-
-// import FakeYoutube from "../api/fakeYououtube";
-import Youtube from "../api/youtube";
+import { useYoutubeApi } from "../context/YoutubeApiContext";
 
 export default function Videos() {
   const { keyword } = useParams();
+  const { youtube } = useYoutubeApi();
   const {
     isLoading,
     error,
     data: videos,
-  } = useQuery(["videos", keyword], () => {
-    // const youtube = new FakeYoutube();
-    const youtube = new Youtube();
-    return youtube.search(keyword);
-  });
+  } = useQuery(["videos", keyword], () => youtube.search(keyword));
   return (
     <>
       <div>Videos {keyword ? `🔍${keyword}` : `🔥`}</div>
@@ -32,6 +27,43 @@ export default function Videos() {
     </>
   );
 }
+
+//---------------------------------------------------------------------------------------------
+
+// import React from "react";
+// import { useQuery } from "@tanstack/react-query";
+// import { useParams } from "react-router-dom";
+// import VideoCard from "../components/VideoCard";
+
+// // import FakeYoutube from "../api/fakeYououtube";
+// import Youtube from "../api/youtube";
+
+// export default function Videos() {
+//   const { keyword } = useParams();
+//   const {
+//     isLoading,
+//     error,
+//     data: videos,
+//   } = useQuery(["videos", keyword], () => {
+//     // const youtube = new FakeYoutube();
+//     const youtube = new Youtube();
+//     return youtube.search(keyword);
+//   });
+//   return (
+//     <>
+//       <div>Videos {keyword ? `🔍${keyword}` : `🔥`}</div>
+//       {isLoading && <p>Loading...</p>}
+//       {error && <p>{error.message}</p>}
+//       {videos && (
+//         <ul>
+//           {videos.map((video) => (
+//             <VideoCard key={video.id} video={video} />
+//           ))}
+//         </ul>
+//       )}
+//     </>
+//   );
+// }
 
 // fetch의 문제점
 // fetch는 데이터를 받아왔다고 판단할 때 then으로 보내게 되는데

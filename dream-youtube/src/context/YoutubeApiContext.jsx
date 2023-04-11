@@ -1,0 +1,22 @@
+import { createContext, useContext } from "react";
+import Youtube from "../api/youtube";
+import YoutubeClient from "../api/youtubeClient";
+
+export const YoutubeApiContext = createContext();
+
+const client = new YoutubeClient();
+const youtube = new Youtube(client); // <--
+// const youtube = new FakeYoutubeClient(); // mock data를 사용하고 싶을 때 <--
+
+export function YoutubeApiProvider({ children }) {
+  return <YoutubeApiContext.Provider value={{ youtube }}>{children}</YoutubeApiContext.Provider>; // 우산을 쓰고 있는 모든 children 컴포넌트에서 value를 사용한다고 하면 설정한 인스턴스를 사용
+}
+
+export function useYoutubeApi() {
+  return useContext(YoutubeApiContext);
+}
+
+// YoutubeApiProvider 라는 우산(context)을 만들고
+// 어떤 Youtube 인스턴스를 사용할지 결정(FakeYoutube, Youtube) -->
+// 그래서 UI를 보여주는 <videos> 컴포넌트에서는 어떤 인스턴스를 사용하는지 어떤 네트워크 통신을 하는지 어디서 데이터를 가지고 오는지 전혀 상관하지 않아도
+// provider에서 제공해주는 youtube를 사용해서 원하는 함수를 호출하면 된다
