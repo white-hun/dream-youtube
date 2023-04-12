@@ -20,3 +20,8 @@ export function useYoutubeApi() {
 // 어떤 Youtube 인스턴스를 사용할지 결정(FakeYoutube, Youtube) -->
 // 그래서 UI를 보여주는 <videos> 컴포넌트에서는 어떤 인스턴스를 사용하는지 어떤 네트워크 통신을 하는지 어디서 데이터를 가지고 오는지 전혀 상관하지 않아도
 // provider에서 제공해주는 youtube를 사용해서 원하는 함수를 호출하면 된다
+
+// 1. context를 만든다
+// 2. provider(우산?컴포넌트)을 만든다
+// 3. useYoutubeApi를 사용하면 value(=youtube)를 사용할 수 있게 해준다
+// 4.우산 씌워주고 필요한 곳에서 value를 불러온다
