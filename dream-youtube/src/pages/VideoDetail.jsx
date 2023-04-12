@@ -14,6 +14,6 @@ export default function VideoDetail() {
   } = useQuery(["detail", keyword], () => youtube.search(keyword));
   const videoDetail = detail?.find((item) => item.id === videoId);
 
-  return <>{videoDetail && console.log(videoDetail)}</>;
+  return <>{videoDetail && console.log(videoId)}</>;
   // return <div>{videoDetail.snippet.title}</div>;
 }
