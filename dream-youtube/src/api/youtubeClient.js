@@ -15,3 +15,6 @@ export default class YoutubeClient {
     return this.httpClient.get("videos", params);
   }
 }
+
+// 내부적으로 axios로 셋업하고 기본적으로 전달되어야하는 baseURL과 params를 설정
+// 전달받은 params를 사용하여 constructor에서 설정한 실제 api에 get요청

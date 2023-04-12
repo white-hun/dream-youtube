@@ -8,3 +8,5 @@ export default class FakeYoutubeClient {
     return axios.get(`/videos/popular.json`);
   }
 }
+
+// params는 전혀 신경쓰지 않고 정해진 mock data를 읽는다

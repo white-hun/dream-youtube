@@ -1,3 +1,5 @@
+// 데이터 하나를 제공해주는 우산
+
 import { createContext, useContext } from "react";
 import Youtube from "../api/youtube";
 import YoutubeClient from "../api/youtubeClient";

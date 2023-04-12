@@ -125,3 +125,16 @@ export default class Youtube {
       .then((res) => res.data.items);
   }
 }
+
+// 어떤 apiClient를 받아온다
+// search라는 공개 함수가 있다
+//  - Youtube Class를 이용해서 만든 인스턴스에서 호출이 가능한 함수
+// keyword가 있다면 keyword를 받아서 searchByKeyword를, 없으면 mostPopular의 결과값을 바로 return
+// #searchBykeyword
+// 어떤 Client에 대해 search함수를 사용할 때 필요한 params를 전달
+// search는 비동기 함수니까 promise를 return하는 함수니까 then으로 받아온 데이터를 적절히 처리
+// #mostPopular
+// 어떤 Client에 대해 videos함수를 사용할 때 필요한 params를 전달
+// Youtube class
+// 외부로부터 전달 받은 apiClient를 이용해서 원하는 옵션을 전달해서 apiClient를 호출
+// apiClient에는 두가지 함수가 있다(search, videos)
