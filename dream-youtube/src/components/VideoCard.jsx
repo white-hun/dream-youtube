@@ -11,7 +11,7 @@ export default function VideoCard({ video, type }) {
   };
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(`/videos/watch/${video.id}`, { state: { video } });
+    navigate(`/videos/watch/${video.id}`, { state: { video } }); // MY: navigate 두번째 인자에 객체를 전달할 수 있다 state라는 key를 사용한다
   };
   const isList = type === "list";
 
