@@ -33,3 +33,6 @@ export default function SearchHeader() {
     </header>
   );
 }
+
+// keyword가 변경될 때마다 text를 업데이트 해준다 업데이트 될때만 실행할거기 때문에 useEffect 사용
+// settext는 keyword로 설정하는데 keyword가 없다면 빈 문자열("")을 준다
