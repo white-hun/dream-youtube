@@ -29,7 +29,7 @@ import axios from "axios";
 // #은 private함수 - class 내부적으로는 호출이 가능하나 class 외부에서는 호출할 수 없다
 
 // 외부에서는 searchByKeyword나 nostPopular상관하지 않고 그냥 search에 keyword만 전달하면된다 search(keyword)
-// 그럼 내부적으로 알아서 keyword가 있다면  searchByKeyword를 없다면 nostPuplar를 호출
+// 그럼 내부적으로 알아서 keyword가 있다면  searchByKeyword를 없다면 mostPuplar를 호출
 
 // -------------------------------------------------------------------------------
 
