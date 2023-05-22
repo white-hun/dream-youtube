@@ -14,7 +14,7 @@ body {
   @apply bg-zinc-900 text-gray-50;
 }
 #root {
-  @apply w-full max-w-screen-2xl;
+  @apply w-full p-5 max-w-screen-2xl;
 }
 
 code {
