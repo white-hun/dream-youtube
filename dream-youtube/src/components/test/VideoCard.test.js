@@ -60,3 +60,4 @@ describe("VideoCard", () => {
 // VideoCard 컴포넌트에서 useNavigate라는 react-router를 사용하고 있다
 // react-router 컴포넌트를 만들 때에는 react-router 환경을 만들어 줘야한다
 // <MemoryRouter>로 컴포넌트를 감싸준다(<StaticRouter>, <MemoryRouter>, <BrowserRouter>)
+//
