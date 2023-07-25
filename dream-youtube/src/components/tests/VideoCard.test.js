@@ -74,7 +74,7 @@
 //------------------------------------------------------------------------------------------------------
 // 리펙토링
 
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { Route, useLocation } from "react-router-dom";
 import { withRouter } from "../../tests/utils";
@@ -111,8 +111,10 @@ describe("VideoCard", () => {
     );
 
     const card = screen.getByRole("listitem");
-    await userEvent.click(card);
+    userEvent.click(card);
 
-    expect(screen.getByText(JSON.stringify({ video }))).toBeInTheDocument();
+    await waitFor(() => {
+      expect(screen.getByText(JSON.stringify({ video }))).toBeInTheDocument();
+    });
   });
 });
