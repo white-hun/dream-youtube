@@ -76,12 +76,12 @@
 
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { MemoryRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, useLocation } from "react-router-dom";
+import { withRouter } from "../../tests/utils";
+import { fakeVideo as video } from "../../tests/videos";
+// videos.js에서 만든 fakeVideo를 가져와서 video라는 이름으로 사용한다
 import { formatAgo } from "../../util/date";
 import VideoCard from "../VideoCard";
-import { fakeVideo as video } from "../../tests/videos";
-import { withRouter } from "../../tests/utils";
-// videos.js에서 만든 fakeVideo를 가져와서 video라는 이름으로 사용한다
 
 describe("VideoCard", () => {
   const { title, channelTitle, publishedAt, thumbnails } = video.snippet;
@@ -111,7 +111,7 @@ describe("VideoCard", () => {
     );
 
     const card = screen.getByRole("listitem");
-    await userEvent.click(card); //
+    await userEvent.click(card);
 
     expect(screen.getByText(JSON.stringify({ video }))).toBeInTheDocument();
   });
