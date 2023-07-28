@@ -53,7 +53,8 @@
 //     // 처음에 시작하는 경로 initialEntries로 설정
 //     // click에 되면 Route에 작성한 경로로 이동하는지
 
-//     // <VideoCard />컴포넌트에 return 최상위 부모가 li인데 li를 확인하는 listitem이라는 Role을 가지고 있다
+//     // <VideoCard />컴포넌트에 return 최상위 부모가 li인데 li tag는 listitem이라는 Role을 가지고 있다
+//     // tag들은 각각 Role을 가지고 있다
 //     const card = screen.getByRole("listitem");
 //     await userEvent.click(card); //
 
