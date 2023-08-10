@@ -1,0 +1,5 @@
+describe("SearchHeader", () => {
+  //
+
+  it("", () => {});
+});
