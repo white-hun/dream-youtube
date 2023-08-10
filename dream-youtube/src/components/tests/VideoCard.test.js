@@ -119,3 +119,71 @@
 //     });
 //   });
 // });
+
+// 전달받은 prop video의 데이터를 보여주는지
+// navigate에의한 경로로 잘 이동하는지
+
+import { render, screen, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import renderer from "react-test-renderer";
+import { Route, useLocation } from "react-router-dom";
+import { fakeVideo as video } from "../../tests/videos";
+import { withRouter } from "../../tests/utils";
+import { formatAgo } from "../../util/date";
+import VideoCard from "../VideoCard";
+describe("VideoCaed", () => {
+  const { title, channelTitle, publishedAt, thumbnails } = video.snippet;
+
+  it("renders grid type correctly", () => {
+    const component = renderer.create(
+      withRouter(<Route path="/" element={<VideoCard video={video} />} />)
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it("renders video item", async () => {
+    render(withRouter(<Route path="/" element={<VideoCard video={video} />} />));
+
+    const image = screen.getByRole("img");
+    expect(image.src).toBe(thumbnails.medium.url);
+    expect(image.alt).toBe(title);
+    expect(screen.getByText(title)).toBeInTheDocument();
+    expect(screen.getByText(channelTitle)).toBeInTheDocument();
+    expect(screen.getByText(formatAgo(publishedAt))).toBeInTheDocument();
+  });
+
+  // // grid 와 list 일 때 차이점을 명확하게 검사해야하는데 요소들이 보이는지만 검사하고 있다
+  // // grid 와 list 일 때 정확하게 클래스 이름을 쓰는지 안쓰는지를 확인해야 한다
+  // it("renders video list type", async () => {
+  //   render(withRouter(<Route path="/" element={<VideoCard video={video} type="list" />} />));
+  // });
+
+  it("navigates to detailed video page with video state when chlicked", async () => {
+    function LocationStateDisplay() {
+      return <pre>{JSON.stringify(useLocation().state)}</pre>;
+    }
+
+    render(
+      withRouter(
+        <>
+          <Route path="/" element={<VideoCard video={video} />} />
+          <Route path={`/videos/watch/${video.id}`} element={<LocationStateDisplay />} />
+        </>
+      )
+    );
+
+    const card = screen.getByRole("listitem");
+    userEvent.click(card);
+    await waitFor(() => {
+      expect(screen.getByText(JSON.stringify({ video }))).toBeInTheDocument();
+    });
+  });
+});
+
+// React Router를 사용하는 컴포넌트를 만들 때는 React Router 환경을 만들어줘야한다
+
+// 가상 screen에 text로 가지고 오는데 title, channelTitle, publishedAt들어있는 text가 Document 안에 있어야 한다
+
+// 처음에 시작하는 경로를 명시해줘야한다 (initialEntries 속성)
+// 시작은 "/" 경로인 VideoCard에서 하는데
+// 클릭했을 때 VideoCard가 가지고 있는 id의 경로 `videos/watch/${video.id}`로 이동하는지 확인
