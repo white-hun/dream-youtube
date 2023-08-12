@@ -12,15 +12,15 @@ describe("SearchHeader", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  // 특정 경로에 왔을 때 경로에 있는 검색이 입력폼에 표시되어야 한다
+  // 특정 경로에 왔을 때 경로에 있는 검색이 입력폼(DisplayValue)에 표시되어야 한다
   // 가상의 MemoryRouter에서 path에 keyword라는 경로가 있고 시작은 bts경로로 시작하도록 설정
   // screen에서 입력폼에 bts가 있는지 확인
-  it("renders with keyword correctly", async () => {
+  it("renders with keyword correctly", () => {
     render(withRouter(<Route path="/:keyword" element={<SearchHeader />} />, "/bts"));
     expect(screen.getByDisplayValue("bts")).toBeInTheDocument();
   });
 
-  // form에 submit이 발생하면
+  // 검색어를 입력하고 form에 submit이 발생하면
   // 검색하는 keyword까지 묶어서 이동하는것을 검증
   // home경로에 searchHeader를 보여준 다음
   // /videos/fake-keyword 경로에 임의의 element가 보여지도록 작성
