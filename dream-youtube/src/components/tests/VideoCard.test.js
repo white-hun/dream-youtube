@@ -187,3 +187,7 @@ describe("VideoCaed", () => {
 // 처음에 시작하는 경로를 명시해줘야한다 (initialEntries 속성)
 // 시작은 "/" 경로인 VideoCard에서 하는데
 // 클릭했을 때 VideoCard가 가지고 있는 id의 경로 `videos/watch/${video.id}`로 이동하는지 확인
+
+// unit test: util, api, 하나의 컴포넌트
+// integration test: 컴포넌트들이 묶여있는 컴포넌트(페이지 컴포넌트),
+//                   컴포넌트와 api같은 것을 통신하여 묶어서 사용하는 경우
