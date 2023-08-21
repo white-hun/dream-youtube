@@ -131,7 +131,7 @@ import { fakeVideo as video } from "../../tests/videos";
 import { withRouter } from "../../tests/utils";
 import { formatAgo } from "../../util/date";
 import VideoCard from "../VideoCard";
-describe("VideoCaed", () => {
+describe("VideoCard", () => {
   const { title, channelTitle, publishedAt, thumbnails } = video.snippet;
 
   it("renders grid type correctly", () => {
@@ -158,6 +158,14 @@ describe("VideoCaed", () => {
   //   render(withRouter(<Route path="/" element={<VideoCard video={video} type="list" />} />));
   // });
 
+  // react router로 부터 전달 받은 useLocation에 있는 상태를 <pre> tag 안에 보여준다
+  // video/watch라는 경로에 왔을 때, 경로에 오면서 전달된 상태를 보여주기 위해서 만든 임의의 컴포넌트
+  // 경로에서 VideoVard로 시작하는데 VideoCard가 클릭이 되면
+  // 테스트로 전달된 video object가 가지고 있는 id에 해당하는 경로로 오는지 확인하기 위해서
+
+  // 처음에 시작하는 경로를 명시해줘야한다 (initialEntries 속성)
+  // 시작은 "/" 경로인 VideoCard에서 하는데
+  // 클릭했을 때 VideoCard가 가지고 있는 id의 경로 `videos/watch/${video.id}`로 이동하는지 확인
   it("navigates to detailed video page with video state when chlicked", async () => {
     function LocationStateDisplay() {
       return <pre>{JSON.stringify(useLocation().state)}</pre>;
@@ -172,8 +180,8 @@ describe("VideoCaed", () => {
       )
     );
 
-    const card = screen.getByRole("listitem");
-    userEvent.click(card);
+    const card = screen.getByRole("listitem"); // screen에 listitem에 해당하는 li를 가지고 온다(VideoCard의 최상위 부모 tag)
+    userEvent.click(card); // 가져온 li가 클릭되면
     await waitFor(() => {
       expect(screen.getByText(JSON.stringify({ video }))).toBeInTheDocument();
     });
@@ -183,10 +191,6 @@ describe("VideoCaed", () => {
 // React Router를 사용하는 컴포넌트를 만들 때는 React Router 환경을 만들어줘야한다
 
 // 가상 screen에 text로 가지고 오는데 title, channelTitle, publishedAt들어있는 text가 Document 안에 있어야 한다
-
-// 처음에 시작하는 경로를 명시해줘야한다 (initialEntries 속성)
-// 시작은 "/" 경로인 VideoCard에서 하는데
-// 클릭했을 때 VideoCard가 가지고 있는 id의 경로 `videos/watch/${video.id}`로 이동하는지 확인
 
 // unit test: util, api, 하나의 컴포넌트
 // integration test: 컴포넌트들이 묶여있는 컴포넌트(페이지 컴포넌트),
