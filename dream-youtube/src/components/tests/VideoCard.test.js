@@ -126,7 +126,7 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import renderer from "react-test-renderer";
-import { Route, useLocation } from "react-router-dom";
+import { MemoryRouter, Route, useLocation } from "react-router-dom";
 import { fakeVideo as video } from "../../tests/videos";
 import { withRouter } from "../../tests/utils";
 import { formatAgo } from "../../util/date";
@@ -134,6 +134,7 @@ import VideoCard from "../VideoCard";
 describe("VideoCard", () => {
   const { title, channelTitle, publishedAt, thumbnails } = video.snippet;
 
+  // 정적인 ui, dom tree를 정확하게 검사하는 방법으로 JEST의 snapshot을 사용한다
   it("renders grid type correctly", () => {
     const component = renderer.create(
       withRouter(<Route path="/" element={<VideoCard video={video} />} />)
@@ -171,6 +172,12 @@ describe("VideoCard", () => {
       return <pre>{JSON.stringify(useLocation().state)}</pre>;
     }
 
+    // console.log(
+    //   <MemoryRouter>
+    //     <LocationStateDisplay />
+    //   </MemoryRouter>
+    // );
+
     render(
       withRouter(
         <>
@@ -195,3 +202,8 @@ describe("VideoCard", () => {
 // unit test: util, api, 하나의 컴포넌트
 // integration test: 컴포넌트들이 묶여있는 컴포넌트(페이지 컴포넌트),
 //                   컴포넌트와 api같은 것을 통신하여 묶어서 사용하는 경우
+
+// 컴포넌트에서 어떤걸 테스트할건지 특징과 주요기능들에 대해서 파악
+// 정적인것에 대한 테스트(snapshot or react testing library 선택)
+// 컴포넌트의 주요 기능, 목표 파악
+// react router 안에 있는 컴포넌트는 memoryRouter를 꼭 감싸야한다
