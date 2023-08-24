@@ -123,6 +123,7 @@
 // 전달받은 prop video의 데이터를 보여주는지
 // navigate에의한 경로로 잘 이동하는지
 
+//==========================================================================================
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import renderer from "react-test-renderer";
@@ -131,6 +132,7 @@ import { fakeVideo as video } from "../../tests/videos";
 import { withRouter } from "../../tests/utils";
 import { formatAgo } from "../../util/date";
 import VideoCard from "../VideoCard";
+
 describe("VideoCard", () => {
   const { title, channelTitle, publishedAt, thumbnails } = video.snippet;
 
@@ -207,3 +209,5 @@ describe("VideoCard", () => {
 // 정적인것에 대한 테스트(snapshot or react testing library 선택)
 // 컴포넌트의 주요 기능, 목표 파악
 // react router 안에 있는 컴포넌트는 memoryRouter를 꼭 감싸야한다
+
+//==========================================================================================
