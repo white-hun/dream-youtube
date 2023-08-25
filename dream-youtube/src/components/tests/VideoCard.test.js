@@ -174,12 +174,6 @@ describe("VideoCard", () => {
       return <pre>{JSON.stringify(useLocation().state)}</pre>;
     }
 
-    // console.log(
-    //   <MemoryRouter>
-    //     <LocationStateDisplay />
-    //   </MemoryRouter>
-    // );
-
     render(
       withRouter(
         <>
