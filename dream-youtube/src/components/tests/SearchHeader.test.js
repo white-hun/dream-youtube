@@ -47,16 +47,17 @@ describe("SearchHeader", () => {
         "/home"
       )
     );
+    // Given ===>
 
-    // screen에 버튼과 입력폼을 가지고 와서
+    // ===> screen에 버튼과 입력폼을 가지고 와서
     const searchButton = screen.getByRole("button");
     const searchInput = screen.getByRole("textbox");
 
-    // fake-keyword로 type한 후 버튼을 클릭하면
-    userEvent.type(searchInput, searchKeyword);
-    userEvent.click(searchButton);
+    userEvent.type(searchInput, searchKeyword); // 검색창(Input('textbox'))에 searchKeyword를 작성(typing) 하고
+    userEvent.click(searchButton); // 제출('button') 하면
 
     // 설정한 경로로 이동했다면 'Search result for ${searchKeyword}' 요소가 보여져야 한다
+    // 위에서 searchKeyword의 경로로 이동하면 <p>태그를 보여주기로 했기 때문에
     await waitFor(() => {
       expect(screen.getByText(`Search result for ${searchKeyword}`)).toBeInTheDocument();
     });
