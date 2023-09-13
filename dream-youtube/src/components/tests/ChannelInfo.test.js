@@ -1,6 +1,6 @@
 // TDD
 // unit test할 때 네트워크 통신하면 안좋다, mock 구현 사항으로 대치
-// 외부 의존성을 원하는 데이터로 대치해서 사용
+// 외부 의존성을 원하는 데이터로 대치해서 사용(외부 의존성의 데이터가 주어졌을 때 컴포넌트가 어떻게 동작하는지 확인)
 // url 있다면 어떻게 표기 되는지, url 없다면 이름만 표기
 
 import { render, screen, waitFor } from "@testing-library/react";

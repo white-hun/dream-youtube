@@ -51,3 +51,10 @@ function createTestQueryClient() {
     },
   });
 }
+
+// ***** 테스트 하기 위한 테스트용 QueryClient, Context를 만든다고 생각 하면 된다
+// 그래서 생김새가 실제 사용되는 QueryClient, Context와 똑같지만
+// 사용되는 값만 mocking하거나 테스트용 값들을 만들어서 넣어주면 된다
+
+// youtubeClient에서 axios를 사용하고 있으므로 의존성을 가지고 있다
+// 그래서 Context만 사용하도록 Provider와 Context를 분리해서 외부 외존성을 가지지 않게 한다
