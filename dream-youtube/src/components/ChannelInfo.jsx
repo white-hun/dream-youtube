@@ -14,3 +14,7 @@ export default function ChannelInfo({ id, name }) {
     </div>
   );
 }
+
+// img screen 되는지 rool쓰기
+// url 없을 때 p tag 나오는지
+// 끝?
