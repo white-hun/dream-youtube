@@ -20,7 +20,7 @@ describe("ChannelInfo", () => {
 
   it("renders correctly", async () => {
     // 하고싶은 동작 mocking
-    // 성공적인 케이스를 text하기 위해 호출되면 url을 return
+    // 성공적인 케이스를 text하기 위해 channelImageURl이 호출되면 url을 return하도록 mockImplementation을 사용
     fakeYoutube.channelImageURL.mockImplementation(() => "url");
     // 컴포넌트를 전달할 때는 Route로 감싸야한다
     const { asFragment } = render(
@@ -35,10 +35,12 @@ describe("ChannelInfo", () => {
     });
     expect(asFragment()).toMatchSnapshot();
   });
-  // 그냥 snapshot 하면 url 받아오는 것이 비동기이기 때문에 image가 없이(url없이) name만 출력된다
+  // 그냥 snapshot 하면 url 받아오는 것이 비동기이기 때문에 url이 없을 때 image 없이 name만 출력된다
   // img가 나타날 때까지 기다린다, mock 구현사항에서 url을 반환하니까 channelIndo 컴포넌트에서 url을 받아오면 img가 생성되니까 img를 나타낼 수 있다
   // 특정 사용자 작업에 따라 변경되는 테스트가 있을 수 있는데 이런 변동성이 있는 값들을 rendeResult로써 렌더링된 컴포넌트를 반환하기 위해 asFragment를 사용한다
+  // api에서 받아오는 데이터 마다 url이 다르기 때문에 asFragment를 사용
 
+  // url 없을 때 img가 표시되지 않는 테스트
   it("renders without URL", () => {
     renderChannelInfoWithCallback(() => {
       throw new Error("error");
@@ -46,6 +48,7 @@ describe("ChannelInfo", () => {
     expect(screen.queryByRole("img")).toBeNull();
   });
 
+  // url이 있을 때 image 보여주는 테스트
   it("renders with URL", async () => {
     renderChannelInfoWithCallback("url");
 
@@ -54,6 +57,7 @@ describe("ChannelInfo", () => {
     });
   });
 
+  // 자주 사용되는 render 부분 리펙토링
   function renderChannelInfoWithCallback(callback) {
     fakeYoutube.channelImageURL.mockImplementation(() => callback);
     return render(
@@ -66,3 +70,5 @@ describe("ChannelInfo", () => {
 });
 
 // axios를 test 라이브러리에서 사용하면 항상 에러가 발생한다(SyntaxError: Cannot use import statement outside a module)
+
+// render 를 호출하면 renderResult를 반환하는데

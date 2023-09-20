@@ -137,6 +137,7 @@ describe("VideoCard", () => {
   const { title, channelTitle, publishedAt, thumbnails } = video.snippet;
 
   // 정적인 ui, dom tree를 정확하게 검사하는 방법으로 JEST의 snapshot을 사용한다
+  // snapshot은 render하는 컴포넌트를 router처리해서 사용한다.
   it("renders grid type correctly", () => {
     const component = renderer.create(
       withRouter(<Route path="/" element={<VideoCard video={video} />} />)
