@@ -1,4 +1,4 @@
-import { render, screen, waitFor, waitForElementToBeRemoved } from "timeago.js";
+import { render, screen, waitFor, waitForElementToBeRemoved } from "@testing-library/react";
 import { withAllContexts, withRouter } from "../../tests/utils";
 import { Route } from "react-router-dom";
 import RelatedVideos from "../RelatedVideos";
@@ -18,7 +18,7 @@ describe("RelatedVideos", () => {
 
     // loading 이 없어질 때까지 기다렸다가
     // 데이터가 들어오면 loading이 사라진다
-    await waitForElementToBeRemoved(expect(screen.getByText("Loading...")));
+    await waitForElementToBeRemoved(() => expect(screen.getByText("Loading...")));
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -38,11 +38,13 @@ describe("RelatedVideos", () => {
     fakeYoutube.relatedVideos.mockImplementation(() => fakeVideos);
     renderRelatedVideos();
 
-    expect(screen.getBytext("Loading...")).toBeInTheDocument();
+    expect(screen.getByText("Loading...")).toBeInTheDocument();
   });
 
   it("renders error", async () => {
-    fakeYoutube.relatedVideos.mockImplementation(() => new Error("error"));
+    fakeYoutube.relatedVideos.mockImplementation(() => {
+      throw new Error("error");
+    });
 
     renderRelatedVideos();
     await waitFor(() => {
@@ -51,7 +53,7 @@ describe("RelatedVideos", () => {
   });
 
   function renderRelatedVideos() {
-    render(
+    return render(
       withAllContexts(
         withRouter(<Route path="/" element={<RelatedVideos id="id" />} />),
         fakeYoutube
