@@ -18,7 +18,8 @@ describe("RelatedVideos", () => {
 
     // loading 이 없어질 때까지 기다렸다가
     // 데이터가 들어오면 loading이 사라진다
-    await waitForElementToBeRemoved(() => expect(screen.getByText("Loading...")));
+    // 요소가 사라지는 것을 기다릴 떄에는 queryBy를 사용해야한다(에러가 발생했을 때 더 충분한 설명을 받을 수 있다)
+    await waitForElementToBeRemoved(() => expect(screen.queryByText("Loading...")));
     expect(asFragment()).toMatchSnapshot();
   });
 

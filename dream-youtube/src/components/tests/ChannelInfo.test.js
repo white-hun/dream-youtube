@@ -52,9 +52,12 @@ describe("ChannelInfo", () => {
   it("renders with URL", async () => {
     renderChannelInfoWithCallback("url");
 
-    await waitFor(() => {
-      expect(screen.getByRole("img")).toBeInTheDocument();
-    });
+    // // getBy는 await을 하지 않고 값을 찾지 못하면 에러를 던진다
+    // // await을 하는 findBy를 사용하는 것이 좋다
+    // await waitFor(() => {
+    //   expect(screen.getByRole("img")).toBeInTheDocument();
+    // });
+    await screen.findByRole("img");
   });
 
   // 자주 사용되는 render 부분 리펙토링
