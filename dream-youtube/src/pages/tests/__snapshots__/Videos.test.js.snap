@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Videos render correctly 1`] = `
+<DocumentFragment>
+  <p>
+    Something is wrong.
+  </p>
+</DocumentFragment>
+`;
