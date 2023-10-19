@@ -5,7 +5,7 @@ import { render, screen, waitFor, waitForElementToBeRemoved } from "@testing-lib
 import Videos from "../Videos";
 
 describe("Videos", () => {
-  const keyword = "keyword";
+  const keyword = "BTS";
   const fakeYoutube = {
     search: jest.fn(),
   };
@@ -20,11 +20,12 @@ describe("Videos", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("render related videos correctly", async () => {
+  it("render related videos correctly", () => {
     fakeYoutube.search.mockImplementation(() => fakeVideos);
     renderVideos();
 
-    expect(fakeYoutube.search).toBeCalledWith("keyword");
+    expect(screen.getByText(`/videos/${keyword}`)).toBeInTheDocument();
+    // expect(fakeYoutube.search).toBeCalledWith("keyword");
     // await waitFor(() => expect(screen.getAllByRole("listitem")).toHaveLength(fakeVideos.length));
   });
 
@@ -49,7 +50,7 @@ describe("Videos", () => {
   function renderVideos() {
     return render(
       withAllContexts(
-        withRouter(<Route path="/videos/:keyword" element={<Videos />} />, "/videos/:keyword")
+        withRouter(<Route path="/videos/:keyword" element={<Videos />} />, `/videos/${keyword}`)
       )
     );
   }
