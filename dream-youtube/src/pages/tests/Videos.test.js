@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom";
 import { withAllContexts, withRouter } from "../../tests/utils";
 import { fakeVideo, fakeVideos } from "../../tests/videos";
-import { render, screen, waitFor, waitForElementToBeRemoved } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import Videos from "../Videos";
 
 describe("Videos component", () => {
@@ -16,14 +16,6 @@ describe("Videos component", () => {
   });
 
   afterEach(() => fakeYoutube.search.mockReset());
-
-  // it("render correctly", async () => {
-  //   fakeYoutube.search.mockImplementation(() => fakeVideos);
-  //   const { asFragment } = renderVideos();
-
-  //   await waitForElementToBeRemoved(() => expect(screen.getByText("Loading...")));
-  //   expect(asFragment()).toMatchSnapshot();
-  // });
 
   it("renders all videos when keyword is not specified", async () => {
     renderWithPath("/"); // keyword 없이 최상위 경로로 이동하면
