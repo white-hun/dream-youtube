@@ -9,6 +9,8 @@ describe("Videos component", () => {
     search: jest.fn(),
   };
 
+  // 사용자가 keyword로 검색하면 search한 결과를 보여주고
+  // 아니라면 popular video를 보여준다
   beforeEach(() => {
     fakeYoutube.search.mockImplementation((keyword) => {
       return keyword ? [fakeVideo] : fakeVideos;
@@ -17,6 +19,7 @@ describe("Videos component", () => {
 
   afterEach(() => fakeYoutube.search.mockReset());
 
+  // keyword가 지정되어 있지 않을 때
   it("renders all videos when keyword is not specified", async () => {
     renderWithPath("/"); // keyword 없이 최상위 경로로 이동하면
 
@@ -25,6 +28,7 @@ describe("Videos component", () => {
     await waitFor(() => expect(screen.getAllByRole("listitem")).toHaveLength(fakeVideos.length));
   });
 
+  // keyword로 검색했을 때
   it("when keyword is specified, renders search results", async () => {
     const searchKeyword = "fake-keyword";
     renderWithPath(`/${searchKeyword}`); // keyword가 있는 경로로 렌더링 했을 경우
@@ -53,13 +57,14 @@ describe("Videos component", () => {
     });
   });
 
+  // 최상위 경로와 keyword가 있는 경로 일때 <Videos />가 보여지도록 만든다
   function renderWithPath(path) {
     return render(
       withAllContexts(
         withRouter(
           <>
+            <Route path="/" element={<Videos />} />
             <Route path="/:keyword" element={<Videos />} />
-            <Route path="/:keyword" element={<Videos />} />, ))
           </>,
           path
         ),
