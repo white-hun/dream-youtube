@@ -26,7 +26,7 @@ describe("VideoDetail", () => {
 
     const { title, channelId, channelTitle } = fakeVideo.snippet;
     expect(screen.getByTitle(title)).toBeInTheDocument(); // 유튜브 iframe을 가지고 있는데, 그 때 title을 가지고 있으니까 title을 가지고 있는 요소가 있는지 확인
-    // VideoDetail 안에서 RelatedVideos, ChannelInfo에 prop이 정확하게 전달되었는지 검증하는 코드
+    // VideoDetail 안에서 RelatedVideos, ChannelInfo에 prop이 정확하게 전달되었는지 검증하는 코드(jest함수: toStrictEqual)
     expect(RelatedVideos.mock.calls[0][0]).toStrictEqual({ id: fakeVideo.id });
     expect(ChannelInfo.mock.calls[0][0]).toStrictEqual({
       id: channelId,
