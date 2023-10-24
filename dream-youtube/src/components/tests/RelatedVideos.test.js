@@ -31,7 +31,7 @@ describe("RelatedVideos", () => {
     // 특정 인자 값과 함께 사용되었는지네 대한 테스트를 위해 toBeCalledWith를 사용한다
 
     // listitem을 가진 요소들이 fakeVideos가 가지고 있는 총 갯수와 같은지 확인
-    expect(fakeYoutube.relatedVideos).toHaveBeenCalledWith("id"); // (=toBeCalledwith)
+    expect(fakeYoutube.relatedVideos).toBeCalledWith("id"); // (=toBeCalledwith)
     await waitFor(() => expect(screen.getAllByRole("listitem")).toHaveLength(fakeVideos.length));
   });
 
