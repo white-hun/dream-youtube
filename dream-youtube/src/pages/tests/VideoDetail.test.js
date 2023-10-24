@@ -20,7 +20,7 @@ describe("VideoDetail", () => {
       withRouter(<Route path="/" element={<VideoDetail />} />, {
         pathname: "/",
         state: { video: fakeVideo },
-        key: "fake-key",
+        // key: "fake-key",
       })
     );
 

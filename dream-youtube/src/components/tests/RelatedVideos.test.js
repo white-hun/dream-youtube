@@ -19,7 +19,17 @@ describe("RelatedVideos", () => {
     // loading 이 없어질 때까지 기다렸다가
     // 데이터가 들어오면 loading이 사라진다
     // 요소가 사라지는 것을 기다릴 떄에는 queryBy를 사용해야한다(에러가 발생했을 때 더 충분한 설명을 받을 수 있다)
-    await waitForElementToBeRemoved(() => expect(screen.queryByText("Loading...")));
+
+    // ** queryByText를 사용했을 때 error 발생 -> stackoverflow 답변
+    // 쿼리를 사용하지 않을 수 있을 때 queryBy*
+    // 요소 사용이 예상되어 질 때 getBy*
+
+    // ❌
+    // await waitForElementToBeRemoved(() => expect(screen.queryByText("Loading...")));
+    // expect(asFragment()).toMatchSnapshot();
+
+    // ✅
+    await waitForElementToBeRemoved(() => expect(screen.getByText("Loading...")));
     expect(asFragment()).toMatchSnapshot();
   });
 
