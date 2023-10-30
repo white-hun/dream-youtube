@@ -42,7 +42,7 @@ describe("Videos component", () => {
   it("renders loading state when items are being fetched", async () => {
     renderWithPath("/");
 
-    expect(screen.getByText(/Loading.../i)).toBeInTheDocument(); // ignore 옵션
+    expect(screen.getByText(/Loading.../i)).toBeInTheDocument(); // 정규 표현식으로 정확한 값이 아니더라도 loading...이라는 글자만 있어도 확인될 수 있게 할 수 있다
   });
 
   it("renders error state when fetching items fails", async () => {
