@@ -42,7 +42,7 @@ describe("Videos component", () => {
   it("renders loading state when items are being fetched", async () => {
     renderWithPath("/");
 
-    expect(screen.getByText(/Loading.../i)).toBeInTheDocument();
+    expect(screen.getByText(/Loading.../i)).toBeInTheDocument(); // ignore 옵션
   });
 
   it("renders error state when fetching items fails", async () => {
