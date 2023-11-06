@@ -8,7 +8,6 @@ import NotFound from "./pages/NotFound";
 import Videos from "./pages/Videos";
 import VideoDetail from "./pages/VideoDetail";
 
-// router를 정의했으니 사용해야하는데
 const router = createBrowserRouter([
   {
     path: "/",
